@@ -1,0 +1,142 @@
+{
+  "courses": [
+    {
+      "_id": "1",
+      "title": "React for Beginers",
+      "instructor": "Kuldeep",
+      "category": "Frontend",
+      "price": 210,
+      "type": "premium",
+      "thumbnail": "https://encore.dev/assets/templates/react-starter.png",
+      "description": "React is a JavaScript library for building user interfaces, especially single-page applications (SPAs). It was developed by Facebook and is maintained by Meta and the open-source community.",
+      "lessons": [
+        {
+          "id": "11",
+          "title": "What is React?",
+          "videoUrl": "https://www.youtube.com/embed/LX4JUscM9Sk",
+          "description": "Introduction to React and its purpose in building user interfaces."
+        },
+        {
+          "id": "12",
+          "title": "Setting up React using Vite",
+          "videoUrl": "https://www.youtube.com/embed/z-lof-klHCg",
+          "description": "Learn how to create a React project quickly using Vite."
+        },
+        {
+          "id": "13",
+          "title": "JSX Syntax",
+          "videoUrl": "https://www.youtube.com/embed/WlhFIulWcGQ",
+          "description": "Understanding how JSX allows HTML to be written within JavaScript."
+        },
+        {
+          "id": "14",
+          "title": "Functional vs Class Components",
+          "videoUrl": "https://www.youtube.com/embed/JDu2kphu6N0",
+          "description": "Comparison of functional and class components in React."
+        },
+        {
+          "id": "15",
+          "title": "Rendering Elements",
+          "videoUrl": "https://www.youtube.com/embed/_M-jkD3XgKo",
+          "description": "Learn how React renders elements to the DOM."
+        },
+        {
+          "id": "16",
+          "title": "React Fragments",
+          "videoUrl": "https://www.youtube.com/embed/bHdh1T0-US4",
+          "description": "Using React Fragments to group elements without extra DOM nodes."
+        },
+        {
+          "id": "17",
+          "title": "Props in React",
+          "videoUrl": "https://www.youtube.com/embed/xvm3X1oyTL8",
+          "description": "Passing data between components using props."
+        },
+        {
+          "id": "18",
+          "title": "State in React",
+          "videoUrl": "https://www.youtube.com/embed/w2zdX_onGig",
+          "description": "Managing component data using state."
+        },
+        {
+          "id": "19",
+          "title": "Handling Events",
+          "videoUrl": "https://www.youtube.com/embed/xWYjtDbfkXA",
+          "description": "Attaching event handlers to elements in React."
+        },
+        {
+          "id": "20",
+          "title": "Conditional Rendering",
+          "videoUrl": "https://www.youtube.com/embed/OjF-OwLOKYE",
+          "description": "Show or hide content based on conditions."
+        },
+        {
+          "id": "21",
+          "title": "Lists and Keys",
+          "videoUrl": "https://www.youtube.com/embed/0sasRxl35_8",
+          "description": "Rendering lists of items and using keys for optimal performance."
+        },
+        {
+          "id": "22",
+          "title": "Forms and Input Handling",
+          "videoUrl": "https://www.youtube.com/embed/wB3Jf7yyvfU",
+          "description": "Creating forms and managing user input."
+        },
+        {
+          "id": "23",
+          "title": "useEffect Hook",
+          "videoUrl": "https://www.youtube.com/embed/_NZ5kb68IpA",
+          "description": "Using useEffect to handle side effects in functional components."
+        },
+        {
+          "id": "24",
+          "title": "Component Lifecycle",
+          "videoUrl": "https://www.youtube.com/embed/abjeWy4sZiU",
+          "description": "Understanding the lifecycle methods of components."
+        },
+        {
+          "id": "25",
+          "title": "Basic Styling in React (Inline, CSS Modules, Tailwind)",
+          "videoUrl": "https://www.youtube.com/embed/O295no9-Zts",
+          "description": "Different ways to style React components."
+        }
+      ]
+    },
+    {
+      "_id": "2",
+      "title": "JavaScript",
+      "instructor": "Ashish",
+      "category": "Frontend",
+      "price": "Free",
+      "thumbnail": "https://tse3.mm.bing.net/th/id/OIP.wzjj9sn18ldDI0Z3nyqLyQHaEP?r=0&w=1029&h=589&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "description": "JavaScript is a high-level, interpreted programming language that is one of the core technologies of the web, alongside HTML and CSS. It is a versatile, lightweight, and powerful language used to make web pages interactive, control browser behavior, and manipulate the DOM (Document Object Model).",
+      "lessons": [
+        {
+          "id": "11",
+          "title": "Beginner to Advance",
+          "videoUrl": "https://www.youtube.com/embed/VlPiVmYuoqw",
+          "duration": "",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "_id": "3",
+      "title": "Python For Beginner",
+      "instructor": "Ashish",
+      "category": "Backens",
+      "price": "Free",
+      "thumbnail": "https://thecodex.me/static/52b74df4524162e8807bea5fb094d53c/ee604/Python_Thumbnail_b6e99c74df.png",
+      "description": "Python is a high-level, interpreted, general-purpose programming language known for its simplicity, readability, and versatility. It was created by Guido van Rossum and first released in 1991. Python emphasizes code readability using clear and concise syntax, making it an excellent choice for beginners and experts alike.",
+      "lessons": [
+        {
+          "id": "11",
+          "title": "JavaScript for Beginners",
+          "videoUrl": "https://www.youtube.com/embed/UrsmFxEIp5k",
+          "duration": "",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

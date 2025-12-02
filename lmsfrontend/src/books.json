@@ -1,0 +1,401 @@
+{
+  "books": [
+    {
+      "_id": 1,
+      "title": "Learn JavaScript",
+      "author": "Ashish Yadav",
+      "category": "Programming",
+      "price": "Free",
+      "thumbnail": "https://th.bing.com/th/id/R.05cb89576a58f88e5ce16ac917278306?rik=2Bc6TbcVdvtvfw&riu=http%3a%2f%2fres.cloudinary.com%2fdic1wkup2%2fimage%2fupload%2ff_auto%2fq_auto%2fv1586463490%2ffeature_img%2fNew_Project_1_reksll.png&ehk=JAIVwlZ3bj45rM20%2bv7WODLjoORwXWOM5DokhD0uLyw%3d&risl=&pid=ImgRaw&r=0",
+      "description": "Master JavaScript from scratch with real-world projects and hands-on exercises.",
+      "chapters": [
+        {
+          "title": "Introduction to JavaScript",
+          "description": "Learn how to include JavaScript in your HTML and write your first script.",
+          "code": "<script>\nalert('Hello, JavaScript!');\n</script>"
+        },
+        {
+          "title": "Variables and Data Types",
+          "description": "Learn how to store data using var, let, and const.",
+          "code": "let name = 'Ashish';\nconst age = 25;\nvar isLoggedIn = true;"
+        },
+        {
+          "title": "Operators",
+          "description": "Perform operations using arithmetic, comparison, and logical operators.",
+          "code": "let sum = 10 + 5;\nlet isEqual = 5 === '5'; // false\nlet isAdult = age >= 18 && isLoggedIn;"
+        },
+        {
+          "title": "Conditional Statements",
+          "description": " Use if, else, and switch to make decisions.",
+          "code": "if (age > 18) {\nconsole.log('Adult')\n} else {\nconsole.log('Minor')\n}"
+        },
+        {
+          "title": "Loops",
+          "description": "Repeat actions using for, while, and do...while.",
+          "code": "for (let i = 1; i <= 5; i++) {\nconsole.log(i)\n}"
+        },
+        {
+          "title": "Functions",
+          "description": "Group reusable logic using functions.",
+          "code": "function greet(name) {\nreturn `Hello, ${name}!`;\n}\nconsole.log(greet('Ashish'));"
+        },
+        {
+          "title": "Arrays",
+          "description": "Store and manipulate collections of data.",
+          "code": "let fruits = ['apple', 'banana', 'cherry'];\nconsole.log(fruits[1]); // banana"
+        },
+        {
+          "title": "Objects",
+          "description": "Use key-value pairs to represent real-world entities.",
+          "code": "let user = {\nname: 'Ashish',\nage: 25,\ngreet: function () {\nconsole.log('Hello!');\n},\n};\nuser.greet();"
+        },
+        {
+          "title": "DOM Manipulation",
+          "description": " Access and update HTML using JavaScript.",
+          "code": "<scritp>\ndocument.getElementById('demo').innerText = 'Updated!';\n</scritp>\n<html>\n<p id='demo'>Original Text</p>\n</html>"
+        },
+        {
+          "title": "Events",
+          "description": "Respond to user interactions like clicks and key presses.",
+          "code": "<scritp>\nfunction sayHello() {\n  alert(Hello!);\n}\n</scritp>\n<html>\n  <button onclick='sayHello()'>Click Me</button>\n</html>"
+        },
+        {
+          "title": "ES6 Features",
+          "description": "Modern JavaScript features like arrow functions, destructuring, and template literals.",
+          "code": "const greet = (name) => `Hello, ${name}`;\nconst [a, b] = [1, 2];"
+        },
+        {
+          "title": "Asynchronous JavaScript",
+          "description": "Handle async operations using callbacks, promises, and async/await.",
+          "code": "fetch('https://api.example.com')\n  .then((res) => res.json())\n  .then((data) => console.log(data));\n// Using async/await\nasync function loadData() {\n  const res = await fetch('https://api.example.com');\n  const data = await res.json();\n  console.log(data);\n}"
+        }
+      ]
+    },
+    {
+      "_id": 2,
+      "title": "React",
+      "author": "Ashish Yadav",
+      "category": "Programming",
+      "price": "Free",
+      "thumbnail": "https://wallpaperaccess.com/full/8108783.png",
+      "description": "React is a free and open-source JavaScript library used for building user interfaces, especially for single-page applications (SPAs). It lets developers create large web applications that can update and render efficiently in response to data changes — without reloading the page.",
+      "chapters": [
+        {
+          "title": "Introduction to React",
+          "description": " Learn what React is, why it’s popular, and how to set up a React app using Create React App or Vite.",
+          "code": "npx create-react-app my-app\ncd my-app\nnpm start"
+        },
+        {
+          "title": "JSX Syntax",
+          "description": "JSX allows writing HTML-like code inside JavaScript.",
+          "code": "const element = <h1>Hello, React!</h1>;"
+        },
+        {
+          "title": "Functional Components",
+          "description": "Create reusable UI pieces using functions.",
+          "code": "function Welcome() {\n  return <h1>Welcome to React</h1>;\n}"
+        },
+        {
+          "title": "Props",
+          "description": "Pass data from parent to child components.",
+          "code": "function Greet(props) {\n  return <h2>Hello, {props.name}!</h2>;\n}\n\n// Usage\n<Greet name='Ashish' />"
+        },
+        {
+          "title": "State in React",
+          "description": " Use the useState hook to manage component state.",
+          "code": "import { useState } from 'react';\n\nfunction Counter() {\n const [count, setCount] = useState(0);\n return (\n  <div>\n   <p>{count}</p>\n   <button onClick={() => setCount(count + 1)}>Increment</button>\n  </div>\n );\n}"
+        },
+        {
+          "title": "Handling Events",
+          "description": "Add interactivity with event handlers like onClick.",
+          "code": "function ClickButton() {\n const handleClick = () => {\n  alert('Button Clicked');\n };\n return <button onClick={handleClick}>Click Me</button>;\n}"
+        },
+        {
+          "title": "Conditional Rendering",
+          "description": "Show different UI elements based on conditions.",
+          "code": "function Greeting({ isLoggedIn }) {\n return <h1>{isLoggedIn ? 'Welcome Back!' : 'Please Login'}</h1>;\n}"
+        },
+        {
+          "title": "Lists and Keys",
+          "description": "Render dynamic lists using .map() and unique keys.",
+          "code": "const users = ['Ashish', 'John', 'Sara'];\n\nfunction UserList() {\n return (\n  <ul>\n   {users.map((user, index) => (\n    <li key={index}>{user}</li>\n   ))}\n  </ul>\n );\n}"
+        },
+        {
+          "title": "useEffect Hook",
+          "description": "Render dynamic lists using .map() and unique keys.",
+          "code": "import { useEffect, useState } from 'react';\n\nfunction DataFetcher() {\n const [data, setData] = useState([]);\n\n useEffect(() => {\n  fetch('https://api.example.com/items')\n   .then((res) => res.json())\n   .then((data) => setData(data));\n }, []);\n\n return <pre>{JSON.stringify(data, null, 2)}</pre>;\n}"
+        },
+        {
+          "title": "Forms in React",
+          "description": "Build forms and manage input values with controlled components.",
+          "code": "function FormExample() {\n const [name, setName] = useState('');\n\nconst handleSubmit = (e) => {\n e.preventDefault();\n };\n\nreturn (\n  <form onSubmit={handleSubmit}>\n   <input value={name} onChange={(e) => setName(e.target.value)} />\n   <button type='submit'>Submit</button>\n  </form>\n );\n}"
+        },
+        {
+          "title": "React Router (v6)",
+          "description": "Navigate between pages using react-router-dom.",
+          "code": "npm install react-router-dom\n\n\nimport { BrowserRouter, Routes, Route, Link } from 'react-router-dom';\n\nfunction App() {\n return (\n  <BrowserRouter>\n   <Link to='/about'>About</Link>\n   <Routes>\n    <Route path='/' element={<Home />} />\n    <Route path='/about' element={<About />} />\n   </Routes>\n  </BrowserRouter>\n );\n}"
+        },
+        {
+          "title": " Context API",
+          "description": "Share state across components without prop drilling.",
+          "code": "const UserContext = React.createContext();\n\nfunction App() {\n return (\n  <UserContext.Provider value={'Ashish'}>\n   <User />\n  </UserContext.Provider>\n );\n}\n\nfunction User() {\n  const name = useContext(UserContext);\n  return <h1>Hello, {name}</h1>;\n}"
+        },
+        {
+          "title": "Custom Hooks",
+          "description": "Encapsulate reusable logic into your own hooks.",
+          "code": "function useCounter() {\n const [count, setCount] = useState(0);\n const increment = () => setCount((c) => c + 1);\n return [count, increment];\n}"
+        },
+        {
+          "title": "React Fragments",
+          "description": "Encapsulate reusable logic into your own hooks.",
+          "code": "function FragmentExample() {\n return (\n  <>\n   <h1>Title</h1>\n   <p>Description</p>\n  </>\n );\n}"
+        }
+      ]
+    },
+    {
+      "_id": 3,
+      "title": "NodeJs",
+      "author": "Ashish Yadav",
+      "category": "Programming",
+      "price": "Free",
+      "thumbnail": "https://externlabs.com/blogs/wp-content/uploads/2021/12/2400%D1%851260-rw-blog-node-js.png",
+      "description": "Node.js is an open-source, cross-platform JavaScript runtime environment that allows you to run JavaScript on the server side.\n\n Built on Google Chrome’s V8 JavaScript engine\n\n Enables building fast, scalable, and event-driven server-side applications\n\nUses non-blocking I/O and asynchronous programming, ideal for real-time apps like chat servers or APIs",
+      "chapters": [
+        {
+          "title": "Introduction to Node.js",
+          "description": "Learn what Node.js is and how it's used to build server-side applications.",
+          "code": "console.log('Hello from Node.js!');"
+        },
+        {
+          "title": "Setting Up Node.js",
+          "description": "How to install Node.js and initialize a project using npm.",
+          "code": "npm init -y"
+        },
+        {
+          "title": "Creating a Simple Server",
+          "description": "Use the built-in 'http' module to create a basic web server.",
+          "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.end('Welcome to Node.js Server!');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running on http://localhost:3000');\n});"
+        },
+        {
+          "title": "Working with File System (fs)",
+          "description": "Read and write files using the fs module.",
+          "code": "const fs = require('fs');\n\nfs.writeFileSync('example.txt', 'Hello Node.js');\nconst content = fs.readFileSync('example.txt', 'utf-8');\nconsole.log(content);"
+        },
+        {
+          "title": "Using Express.js",
+          "description": "Install and use Express.js to simplify server creation.",
+          "code": "const express = require('express');\nconst app = express();\n\napp.get('/', (req, res) => {\n  res.send('Hello from Express!');\n});\n\napp.listen(3000, () => console.log('Server started at http://localhost:3000'));"
+        },
+        {
+          "title": "Handling Routes and Params",
+          "description": "Learn to create multiple routes and use route parameters.",
+          "code": "app.get('/user/:name', (req, res) => {\n  res.send(`Hello, ${req.params.name}`);\n});"
+        },
+        {
+          "title": "Working with Middleware",
+          "description": "Use middleware in Express to log requests or handle JSON.",
+          "code": "app.use(express.json());\n\napp.use((req, res, next) => {\n  console.log(`${req.method} ${req.url}`);\n  next();\n});"
+        },
+        {
+          "title": "Using Environment Variables",
+          "description": "Secure your app using environment variables with dotenv.",
+          "code": "require('dotenv').config();\nconsole.log(process.env.PORT);"
+        },
+        {
+          "title": "Connecting to MongoDB with Mongoose",
+          "description": "Use Mongoose to connect and interact with MongoDB.",
+          "code": "const mongoose = require('mongoose');\n\nmongoose.connect('mongodb://localhost:27017/myapp')\n  .then(() => console.log('MongoDB connected'))\n  .catch(err => console.error(err));"
+        },
+        {
+          "title": "Creating an API",
+          "description": "Build RESTful APIs using Express.js and CRUD operations.",
+          "code": "app.get('/api/products', (req, res) => {\n  res.json([{ id: 1, name: 'Book' }]);\n});"
+        }
+      ]
+    },
+    {
+      "_id": 4,
+      "title": "MongoDB",
+      "author": "Ashish Yadav",
+      "category": "Programming",
+      "price": "Free",
+      "thumbnail": "https://i.ytimg.com/vi/iu_DvuIDDUU/maxresdefault.jpg",
+      "description": "MongoDB is a NoSQL, document-oriented database used for storing high-volume data in a flexible, JSON-like format.\n\nInstead of tables and rows (like SQL), MongoDB uses collections and documents.\nBuilt for scalability, performance, and developer agility.\nData is stored in BSON (Binary JSON) format.",
+      "chapters": [
+        {
+          "title": "Introduction to MongoDB",
+          "description": "Understand what MongoDB is, why it's used, and its NoSQL document-oriented nature.",
+          "code": "// MongoDB stores data in JSON-like BSON format\n{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"email\": \"john@example.com\"\n}"
+        },
+        {
+          "title": "Installing MongoDB",
+          "description": "Steps to install MongoDB locally and start the MongoDB server.",
+          "code": "// On Windows/Mac/Linux\nmongod --dbpath=/data/db"
+        },
+        {
+          "title": "MongoDB Shell Basics",
+          "description": "Basic commands in the MongoDB shell: creating DB, inserting and querying documents.",
+          "code": "use myDatabase\n\ndb.users.insertOne({ name: 'Alice', age: 25 })\ndb.users.find({ age: { $gt: 20 } })"
+        },
+        {
+          "title": "CRUD Operations",
+          "description": "Perform Create, Read, Update, and Delete operations on MongoDB collections.",
+          "code": "// Create\n db.books.insertOne({ title: 'Node.js Guide', price: 299 })\n\n// Read\n db.books.find({})\n\n// Update\n db.books.updateOne({ title: 'Node.js Guide' }, { $set: { price: 399 } })\n\n// Delete\n db.books.deleteOne({ title: 'Node.js Guide' })"
+        },
+        {
+          "title": "Connecting MongoDB with Node.js",
+          "description": "Use the native MongoDB driver to connect your Node.js app to MongoDB.",
+          "code": "const { MongoClient } = require('mongodb');\n\nconst url = 'mongodb://localhost:27017';\nconst client = new MongoClient(url);\n\nasync function connectDB() {\n  await client.connect();\n  const db = client.db('myDatabase');\n  const users = db.collection('users');\n  const data = await users.find({}).toArray();\n  console.log(data);\n}\n\nconnectDB();"
+        },
+        {
+          "title": "Mongoose Introduction",
+          "description": "Use Mongoose ODM to model MongoDB data in Node.js applications.",
+          "code": "const mongoose = require('mongoose');\nmongoose.connect('mongodb://localhost:27017/myapp');\n\nconst User = mongoose.model('User', { name: String, age: Number });\n\nconst user = new User({ name: 'Tom', age: 22 });\nuser.save();"
+        },
+        {
+          "title": "7. Schema and Models in Mongoose",
+          "description": "Define schemas and create models to structure MongoDB documents using Mongoose.",
+          "code": "const userSchema = new mongoose.Schema({\n  name: String,\n  email: { type: String, required: true },\n  age: Number\n});\n\nconst User = mongoose.model('User', userSchema);"
+        },
+        {
+          "title": "Validation and Middleware",
+          "description": "Implement validation and use pre/post middleware in Mongoose.",
+          "code": "userSchema.pre('save', function (next) {\n  console.log('Saving user:', this.name);\n  next();\n});"
+        },
+        {
+          "title": "Relationships and Population",
+          "description": "Reference documents using ObjectId and populate related data.",
+          "code": "const postSchema = new mongoose.Schema({\n  title: String,\n  author: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }\n});\n\nPost.find().populate('author').exec((err, posts) => console.log(posts));"
+        },
+        {
+          "title": "Aggregation and Indexing",
+          "description": "Perform powerful queries using aggregation pipeline and improve performance using indexes.",
+          "code": "db.orders.aggregate([\n  { $match: { status: 'completed' } },\n  { $group: { _id: '$customerId', total: { $sum: '$amount' } } }\n]);\n\ndb.users.createIndex({ email: 1 }, { unique: true });"
+        }
+      ]
+    },
+    {
+      "_id": 5,
+      "title": "Tailwind CSS",
+      "author": "Ashish Yadav",
+      "category": "Programming",
+      "price": "Free",
+      "thumbnail": "https://vabadus.es/images/articulos/64b524021adc5990918944.png",
+      "description": "Tailwind CSS is a utility-first CSS framework that provides low-level, atomic classes to build modern user interfaces directly in your HTML or JSX.\n\nUnlike frameworks like Bootstrap, Tailwind does not provide prebuilt components. Instead, you create custom designs using composable utility classes.",
+      "chapters": [
+        {
+          "title": "Introduction to Tailwind CSS",
+          "description": "Tailwind CSS is a utility-first CSS framework that enables rapid UI development with low-level utility classes.",
+          "code": "<div class=\"text-center text-blue-600 font-bold\">Hello Tailwind!</div>"
+        },
+        {
+          "title": "Setting Up Tailwind",
+          "description": "Learn how to install Tailwind using CDN or by configuring it with PostCSS and a build tool like Vite or Webpack.",
+          "code": "",
+          "link": "https://tailwindcss.com/docs/installation/using-vite"
+        },
+        {
+          "title": "Typography Utilities",
+          "description": "Use utilities to control text size, color, alignment, weight, and spacing.",
+          "code": "<h1 class=\"text-3xl font-semibold text-gray-800\">Welcome</h1>"
+        },
+        {
+          "title": "Layout (Flex & Grid)",
+          "description": "Use Flexbox and Grid utilities to build responsive layouts easily.",
+          "code": "<div class=\"flex justify-between items-center\">\n  <div>Left</div>\n  <div>Right</div>\n</div>"
+        },
+        {
+          "title": "Spacing (Margin & Padding)",
+          "description": "Apply consistent margin and padding using Tailwind's spacing scale.",
+          "code": "<div class=\"p-6 m-4 bg-gray-100\">Box with padding & margin</div>"
+        },
+        {
+          "title": "Backgrounds & Borders",
+          "description": "Customize background colors, gradients, and borders.",
+          "code": "<div class=\"bg-gradient-to-r from-purple-400 to-pink-500 border-2 border-gray-300 rounded-lg p-4\">Gradient Box</div>"
+        },
+        {
+          "title": "Responsive Design",
+          "description": "Build responsive components using Tailwind's breakpoint prefixes like `sm:`, `md:`, `lg:`.",
+          "code": "<div class=\"text-sm md:text-lg lg:text-xl\">Responsive text</div>"
+        },
+        {
+          "title": "Hover, Focus, and Active States",
+          "description": "Style components for different states like hover and focus with modifiers.",
+          "code": "<button class=\"bg-blue-500 hover:bg-blue-600 focus:ring-2 ring-blue-300 text-white px-4 py-2 rounded\">Hover Me</button>"
+        },
+        {
+          "title": "Customizing Tailwind Config",
+          "description": "Extend the default Tailwind theme and customize breakpoints, colors, spacing, and more using `tailwind.config.js`.",
+          "code": "// tailwind.config.js\nmodule.exports = {\n  theme: {\n    extend: {\n      colors: {\n        brand: '#1E40AF',\n      },\n    },\n  },\n}"
+        },
+        {
+          "title": "Animations & Transitions",
+          "description": "Add built-in transitions and create custom animations with ease.",
+          "code": "<div class=\"transition duration-300 transform hover:scale-105 bg-white p-4 shadow-md rounded\">Hover to Zoom</div>"
+        }
+      ]
+    },
+    {
+      "_id": 6,
+      "title": "HTML",
+      "author": "Ashish Yadav",
+      "category": "Programming",
+      "price": 210,
+      "thumbnail": "https://strapi.dhiwise.com/uploads/Blog_Common_Image_HTML_OG_Image_53083794ac.png",
+      "description": "HTML (HyperText Markup Language) is the standard language used to create the structure of web pages. It defines the content and layout using a system of elements (tags), such as headings, paragraphs, links, images, forms, and more.",
+      "chapters": [
+        {
+          "title": "Introduction to HTML",
+          "description": "HTML (HyperText Markup Language) is the standard language used to create and structure web pages.",
+          "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My First Page</title>\n  </head>\n  <body>\n    <h1>Hello World!</h1>\n  </body>\n</html>"
+        },
+        {
+          "title": "HTML Headings & Paragraphs",
+          "description": "Use headings (`<h1>` to `<h6>`) to define titles, and `<p>` for paragraphs.",
+          "code": "<h1>Main Heading</h1>\n<h2>Sub Heading</h2>\n<p>This is a paragraph of text.</p>"
+        },
+        {
+          "title": "Links and Anchors",
+          "description": "Use `<a>` to link to other pages or websites.",
+          "code": "<a href=\"https://www.google.com\">Visit Google</a>"
+        },
+        {
+          "title": "Images",
+          "description": "The `<img>` tag is used to embed images in a webpage.",
+          "code": "<img src=\"https://via.placeholder.com/150\" alt=\"Placeholder Image\">"
+        },
+        {
+          "title": "Lists (Ordered and Unordered)",
+          "description": "Use `<ul>` and `<ol>` for unordered and ordered lists respectively.",
+          "code": "<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n</ul>\n\n<ol>\n  <li>First</li>\n  <li>Second</li>\n</ol>"
+        },
+        {
+          "title": "Tables",
+          "description": "Use the `<table>` element to display tabular data.",
+          "code": "<table border=\"1\">\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>25</td>\n  </tr>\n</table>"
+        },
+        {
+          "title": "Forms and Inputs",
+          "description": "Use `<form>`, `<input>`, and other tags to collect user input.",
+          "code": "<form>\n  <label>Name:</label>\n  <input type=\"text\" name=\"name\">\n  <button type=\"submit\">Submit</button>\n</form>"
+        },
+        {
+          "title": "Semantic Elements",
+          "description": "Semantic tags like `<header>`, `<footer>`, and `<section>` provide meaningful structure.",
+          "code": "<header>\n  <h1>My Website</h1>\n</header>\n\n<section>\n  <p>This is content inside a section.</p>\n</section>\n\n<footer>\n  <p>Footer Info</p>\n</footer>"
+        },
+        {
+          "title": "Embedding Videos & Audio",
+          "description": "Use `<video>` and `<audio>` tags to add media to your site.",
+          "code": "<video width=\"320\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  Your browser does not support the video tag.\n</video>"
+        },
+        {
+          "title": "IFrames",
+          "description": "Use `<iframe>` to embed another webpage into your current page.",
+          "code": "<iframe src=\"https://example.com\" width=\"100%\" height=\"300\"></iframe>"
+        }
+      ]
+    }
+  ]
+}
